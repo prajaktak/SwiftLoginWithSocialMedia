@@ -14,6 +14,9 @@
 		A1898CA61D8FDD61004B7061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1898CA41D8FDD61004B7061 /* LaunchScreen.storyboard */; };
 		A1898CB11D8FDD61004B7061 /* SwiftLoginUsingSocialMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1898CB01D8FDD61004B7061 /* SwiftLoginUsingSocialMediaTests.swift */; };
 		A1898CBC1D8FDD62004B7061 /* SwiftLoginUsingSocialMediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1898CBB1D8FDD62004B7061 /* SwiftLoginUsingSocialMediaUITests.swift */; };
+		A1898CCD1D8FFBBF004B7061 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1898CCA1D8FFBBF004B7061 /* FBSDKCoreKit.framework */; };
+		A1898CCE1D8FFBBF004B7061 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1898CCB1D8FFBBF004B7061 /* FBSDKLoginKit.framework */; };
+		A1898CCF1D8FFBC0004B7061 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1898CCC1D8FFBBF004B7061 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A1898CB71D8FDD62004B7061 /* SwiftLoginUsingSocialMediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLoginUsingSocialMediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1898CBB1D8FDD62004B7061 /* SwiftLoginUsingSocialMediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoginUsingSocialMediaUITests.swift; sourceTree = "<group>"; };
 		A1898CBD1D8FDD62004B7061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1898CCA1D8FFBBF004B7061 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A1898CCB1D8FFBBF004B7061 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A1898CCC1D8FFBBF004B7061 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1898CCE1D8FFBBF004B7061 /* FBSDKLoginKit.framework in Frameworks */,
+				A1898CCD1D8FFBBF004B7061 /* FBSDKCoreKit.framework in Frameworks */,
+				A1898CCF1D8FFBC0004B7061 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,7 @@
 		A1898C8F1D8FDD61004B7061 = {
 			isa = PBXGroup;
 			children = (
+				A1898CC91D8FFB96004B7061 /* frameworks */,
 				A1898C9A1D8FDD61004B7061 /* SwiftLoginUsingSocialMedia */,
 				A1898CAF1D8FDD61004B7061 /* SwiftLoginUsingSocialMediaTests */,
 				A1898CBA1D8FDD62004B7061 /* SwiftLoginUsingSocialMediaUITests */,
@@ -123,6 +133,16 @@
 				A1898CBD1D8FDD62004B7061 /* Info.plist */,
 			);
 			path = SwiftLoginUsingSocialMediaUITests;
+			sourceTree = "<group>";
+		};
+		A1898CC91D8FFB96004B7061 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1898CCA1D8FFBBF004B7061 /* FBSDKCoreKit.framework */,
+				A1898CCB1D8FFBBF004B7061 /* FBSDKLoginKit.framework */,
+				A1898CCC1D8FFBBF004B7061 /* FBSDKShareKit.framework */,
+			);
+			name = frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftLoginUsingSocialMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pk.SwiftLoginUsingSocialMedia;
@@ -412,6 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftLoginUsingSocialMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pk.SwiftLoginUsingSocialMedia;
